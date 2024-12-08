@@ -11,3 +11,18 @@ function userName(signup){
 }
 console.log(registerUser("alice"));
 console.log(registerUser("diamond"));
+
+// login code 
+
+function login(userName, password){
+  let name = ["bombay","delhi","patna","indore"];
+   if (name.includes(userName)) {
+     if(password === "Emp@123"){
+      return "Login Successful...";
+     }else {
+            return "Wrong Password...";
+        }
+    } else {
+        return "User Not Found, Please Signup";
+   }
+}
